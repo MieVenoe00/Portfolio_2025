@@ -10,6 +10,11 @@ import Header from "../components/Header.astro";
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favikon.svg" />
     <link rel="stylesheet" href="https://use.typekit.net/gwe1lhm.css" />
+    <link rel="preload" href="/backgroundpic.png" as="image" />
+    <link rel="preload" href="/aboutBackground.png" as="image" />
+    <link rel="preload" href="/contactBackgound.png" as="image" />
+    <link rel="preload" href="/casesbackground.png" as="image" />
+
     <meta name="generator" content={Astro.generator} />
     <title>Mie Venø Skjærbæk</title>
   </head>
@@ -17,7 +22,6 @@ import Header from "../components/Header.astro";
     <Header />
     <slot />
   </body><style>
-
     html,
     body {
       margin: 0;
