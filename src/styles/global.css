@@ -1,1 +1,10 @@
 @import "tailwindcss";
+@import url("https://use.typekit.net/gwe1lhm.css");
+
+@theme {
+    --color-primary: #D97E2E;
+    --color-background: #FFF8F4;
+    --color-greyblack: #313333;
+
+    --font-display: cartograph-cf, monospace;
+}
