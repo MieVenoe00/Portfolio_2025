@@ -5,8 +5,47 @@
     --color-primary: #D97E2E;
     --color-brown: #845B37;
     --color-darkBrown: #61442A;
+    --color-blackBrown: #4C2400;
     --color-background: #FFF8F4;
     --color-greyblack: #313333;
 
     --font-display: cartograph-cf, monospace;
+    --font-bodytext: "Blinker", sans-serif;
 }
+
+h2 {
+    font-family: cartograph-cf, monospace;
+    text-transform: uppercase;
+    color: var(--color-blackBrown);
+    font-size: 3rem;
+    line-height: 3.5rem;
+    font-weight: 700;
+    white-space: nowrap;
+    display: inline;
+    padding: 0;
+        margin: 0;
+}
+h3 {
+font-family: cartograph-cf, monospace;
+    text-transform: lowercase;
+    color: var(--color-darkBrown);
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 100;
+    white-space: nowrap;
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+p {
+font-family: "Blinker", sans-serif;
+    text-transform: lowercase;
+    color: var(--color-blackBrown);
+    font-size: 2.2rem;
+    font-weight: 200;
+    line-height: 90%;
+}
+
+
+/* Blinker:
+Thin 100 ExtraLight 200 Light 300 Regular 400 SemiBold 600 Bold 700 ExtraBold 800 Black 900 */

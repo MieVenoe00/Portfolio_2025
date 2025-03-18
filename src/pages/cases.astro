@@ -1,8 +1,24 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import CasePreview from "../components/CasePreview.astro";
 ---
 
-<Layout />
+<Layout>
+  <CasePreview>
+    <img
+      slot="casepicture"
+      class="rounded-2xl"
+      src="/PP_screendump.jpg"
+      alt=""
+    />
+    <h2 slot="title">Pote-Paradiset</h2>
+    <h3 slot="case">exam project</h3>
+    <p slot="ptext">
+      Visuel identitet, interface, <br /> programmering: p5, html, css,
+    </p>
+  </CasePreview>
+  <!-- <hr class="border-[0.3vw] absolute top-[30vw] w-[80vw] right-0 z-50" /> -->
+</Layout>
 
 <style>
   body {
