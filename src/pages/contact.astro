@@ -2,7 +2,55 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout />
+<Layout>
+  <section class="grid grid-cols-2 w-full h-[90%]">
+    <article class="bg-amber-200 grid grid-rows-2">
+      <div class="bg-pink-300"></div>
+      <div class="bg-orange-300"></div>
+    </article>
+    <article
+      class="relative grid grid-rows-[repeat(5,7rem)] w-full h-full self-center content-end"
+    >
+      <div class="relative flex items-center justify-center">
+        <img src="/pil1.svg" alt="" class="absolute fill-primary" />
+        <h5
+          class="relative z-10 text-center transform translate-x-5 text-[2.2rem]"
+        >
+          Lets Connect
+        </h5>
+      </div>
+      <div class="relative flex items-center justify-center">
+        <img src="/pil2.svg" alt="" class="absolute" />
+        <a
+          href="https://www.linkedin.com/in/mie-ven%C3%B8-skj%C3%A6rb%C3%A6k-567062232/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="ahref relative z-10 text-center text-[1.75rem] transform translate-x-5 hover:underline"
+          >LinkedIn</a
+        >
+      </div>
+      <div class="relative flex items-center justify-center">
+        <img src="/pil3.svg" alt="" class="absolute" />
+        <h5
+          class="relative z-10 text-center transform translate-x-5 text-[1.75rem]"
+        >
+          +45 41 98 41 54
+        </h5>
+      </div>
+      <div
+        class="relative flex items-center justify-center transform translate-x-10"
+      >
+        <img src="/pil4.svg" alt="" class="absolute" />
+        <a
+          id="mail"
+          href="mailto:mie.venoe@outlook.com  "
+          class="relative z-10 text-center transform -translate-x-4 hover:underline"
+          >mie.venoe@outlook.com</a
+        >
+      </div>
+    </article>
+  </section>
+</Layout>
 
 <style>
   body {
