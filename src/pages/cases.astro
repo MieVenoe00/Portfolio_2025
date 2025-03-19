@@ -4,20 +4,61 @@ import CasePreview from "../components/CasePreview.astro";
 ---
 
 <Layout>
-  <CasePreview>
-    <img
-      slot="casepicture"
-      class="rounded-2xl"
-      src="/PP_screendump.jpg"
-      alt=""
+  <!-- overflow div, som gør der ikke sker page scroll -->
+  <div class="w-full h-screen relative">
+    <!-- section som kan scrolle -->
+    <section
+      class="flex overflow-x-scroll w-full h-[90%] items-center pl-[8rem] gap-[8rem] pb-8"
+      id="case-scroll-container"
+    >
+      <CasePreview link="/poteparadiset" class="flex-none">
+        <img slot="casepicture" src="/PP_pic2.jpg" alt="" />
+        <h3 slot="title">Pote-Paradiset</h3>
+        <h4 slot="case">exam project</h4>
+        <p slot="ptext">
+          Visuel identity, interface design, <br /> programming: p5, html, css.
+        </p>
+      </CasePreview>
+
+      <CasePreview link="/UEFA" class="flex-none">
+        <img slot="casepicture" src="/uefapreview.jpg" alt="" />
+        <h3 slot="title">UEFA FANzone</h3>
+        <h4 slot="case">creative case</h4>
+        <p slot="ptext">
+          User Flow, Wireframing, Prototyping, UX/Ui-design, Gamification.
+        </p>
+      </CasePreview>
+
+      <CasePreview link="/example" class="flex-none">
+        <img slot="casepicture" src="/untitled.png" alt="" />
+        <h3 slot="title">Lowpoly island</h3>
+        <h4 slot="case">Blender Project</h4>
+        <p slot="ptext">
+          3D modelling, blender, rendering, Sculpting, UV Mapping, Shading.
+        </p>
+      </CasePreview>
+      <CasePreview link="/example" class="flex-none">
+        <img slot="casepicture" src="/Lizs.png" alt="" />
+        <h3 slot="title">Example Project</h3>
+        <h4 slot="case">sample case</h4>
+        <p slot="ptext">Description of the project goes here.</p>
+      </CasePreview>
+
+      <CasePreview link="/example" class="flex-none">
+        <img slot="casepicture" src="/example.jpg" alt="" />
+        <h3 slot="title">Example Project</h3>
+        <h4 slot="case">sample case</h4>
+        <p slot="ptext">Description of the project goes here.</p>
+      </CasePreview>
+    </section>
+  </div>
+
+  <div>
+    <hr
+      class="border-[0.3vw] absolute border-primary w-[88vw] right-0 z-50"
+      style="bottom: 12rem;"
     />
-    <h2 slot="title">Pote-Paradiset</h2>
-    <h3 slot="case">exam project</h3>
-    <p slot="ptext">
-      Visuel identitet, interface, <br /> programmering: p5, html, css,
-    </p>
-  </CasePreview>
-  <!-- <hr class="border-[0.3vw] absolute top-[30vw] w-[80vw] right-0 z-50" /> -->
+  </div>
 </Layout>
 
 <style>
@@ -26,5 +67,20 @@ import CasePreview from "../components/CasePreview.astro";
     background-image: url("/casesbackground.png");
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-x: hidden; /*overflow som gør der ikke sker page scrol*/
+  }
+
+  /* Make the scrollbar less visible but still functional */
+  #case-scroll-container::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  #case-scroll-container::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  #case-scroll-container::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
   }
 </style>

@@ -1,40 +1,30 @@
-<!-- 
- <div class="w-[20vw] h-[25vw] bg-[#f5eeeacc] rounded-xl">
-  <h2 class="font-display uppercase">Project Title</h2>
-  <h3 class="font-display">Case</h3>
-  <p class="font-bodytext">
-    Visuel identitet, interface, programmering: p5, html, css,
-  </p>
-</div>
- -->
-<section
-  class="w-[27vw] bg-[#f5eeeacc] rounded-2xl mt-[10vw] ml-[10vw] p-6 pb-13 grid grid-rows-[auto_auto] gap-10"
->
-  <div class="rounded-md h-auto"><slot name="casepicture" /></div>
+---
+const { link } = Astro.props;
+---
 
-  <div class="grid grid-cols-4 grid-rows-[auto_auto_auto_auto] pl-2">
+<section
+  class="min-w-[500px] w-[500px] h-[35rem] bg-[#f5eeeacc] border-1 border-primary grid grid-rows-[auto_auto] gap-10 flex-shrink-0"
+>
+  <div class="h-auto"><slot name="casepicture" /></div>
+
+  <div class="grid grid-cols-4 grid-rows-[auto_auto_auto_auto_auto] pl-6">
     <div class="col-span-3 col-start-1 row-start-1">
-      <h2 class="font-display uppercase text-2xl text-blackBrown">
-        <slot name="title" />
-      </h2>
+      <slot name="title" />
     </div>
     <div class="col-span-3 row-start-2">
-      <h3 class="font-display lowercase text-darkBrown text-xl font-normal">
-        <slot name="case" />
-      </h3>
+      <slot name="case" />
     </div>
     <div class="col-span-3 row-start-3 self-start">
       <hr
-        class="border-[0.07rem] rounded-3xl w-[85%] border-darkBrown mb-[2rem] mt-[1.75rem]"
+        class="border-[0.05rem] rounded-3xl w-[85%] border-darkBrown mb-[1.5rem] mt-[1rem]"
       />
     </div>
-    <div class="col-span-3 row-span-2 row-start-4">
-      <p class="font-bodytext text-blackBrown text-lg font-extralight">
-        <slot name="ptext" />
-      </p>
+    <div class="col-span-3 row-span-2 row-start-4 pb-8">
+      <slot name="ptext" />
     </div>
-    <div class="row-span-4 col-start-4 p-3 justify-self-center self-center">
-      <a href="/"><img src="/arrowbtn.svg" alt="" /></a>
+
+    <div class="row-span-5 col-start-4 justify-self-end self-end">
+      <a href={link}><img src="/arrowbtnsq.svg" alt="" /></a>
     </div>
   </div>
 </section>
