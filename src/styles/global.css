@@ -13,6 +13,13 @@
     --font-bodytext: "Blinker", sans-serif;
 }
 
+h2{
+    font-family: cartograph-cf, monospace;
+    color: var(--color-blackBrown);
+    
+        line-height: 3rem;
+        font-weight: 200;
+}
 
 h3 {
     font-family: cartograph-cf, monospace;
@@ -50,6 +57,14 @@ h5, .ahref {
 
     padding: 0;
     margin: 0;
+}
+h6 {
+    font-family: "Blinker", sans-serif;
+    color: var(--color-darkBrown);
+    font-size: 1.7rem;
+        line-height: 2rem;
+        letter-spacing: 0.1rem;
+    text-align: center;
 }
 p {
 font-family: "Blinker", sans-serif;
@@ -99,6 +114,11 @@ text-transform: none;
     font-size: 1.6rem;
     font-weight: 300;
     line-height: 120%;
+}
+
+#sectionTwo::-webkit-scrollbar-thumb {
+    background: #FFF8F4 !important;
+    border-radius: 3px;
 }
 
 @media only screen and (min-width: 3100px) {
