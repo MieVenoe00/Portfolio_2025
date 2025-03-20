@@ -1,0 +1,140 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <div class="h-full w-screen flex content-center overflow-hidden">
+    <section
+      class="relative grid grid-cols-[40rem_auto] ml-[10rem] mt-[7rem] h-[75%] w-full pt-8 bg-[#f5eeeacc]"
+    >
+      <section class="h-full w-auto grid grid-cols-1 grid-rows-[auto_8rem]">
+        <div class="pl-[2rem] flex flex-col">
+          <h3 class="undercaseH3">UEFA FANzone</h3>
+          <h4 class="undercaseH4">creative case</h4>
+          <p class="mt-4 mb-4">
+            User Flow, Wireframing, Prototyping, UX/Ui-design, Gamification.
+          </p>
+
+          <div class="">
+            <hr
+              class="border-[0.05rem] rounded-3xl w-[98%] border-darkBrown mb-[1.5rem] mt-[1rem]"
+            />
+          </div>
+
+          <h3 class="mt-8">Multimedia & Games <br /> - The box</h3>
+          <p class="casePtext mt-8 w-[90%]">
+            In this case project, I designed an interactive Fanzone for UEFA,
+            featuring interactive activities. <br />
+            <br /> The Multimedia & Games area is a active area with both stationary
+            activities and large-screen mini-game events. The activities are accessible
+            via mobile devices, allowing participants to, either competing against
+            or collaborating with other players for an immersive and social experience.
+          </p>
+        </div>
+        <div class="self-end absolute">
+          <a href="/cases"
+            ><img class="rotate-180" src="/arrowbtnsq.svg" alt="" /></a
+          >
+        </div>
+      </section>
+
+      <!-- Outer container for the pink section with overflow -->
+      <div class="relative overflow-x-hidden">
+        <!-- Inner container that extends beyond the visible area -->
+        <div
+          id="sectionTwo"
+          class="h-full overflow-x-auto whitespace-nowrap pb-8 border-l-1"
+          style="width: calc(94vw - 40rem); margin-right: -100vw;"
+        >
+          <!-- Grid container with fixed width to ensure scrolling -->
+          <div
+            class="grid grid-rows-14 grid-cols-[30rem_35rem_35rem_35rem_30rem_30rem_30rem] gap-4 min-w-[150rem] h-full"
+          >
+            <div class="row-span-7 row-start-1 col-start-1">
+              <img
+                class="h-full w-auto"
+                src="/UEFA/mediaandgamesbox.png"
+                alt=""
+              />
+            </div>
+            <div class="row-span-7 row-start-8 col-start-1">
+              <img class="h-full w-auto" src="/UEFA/BigScreen2.png" alt="" />
+            </div>
+            <div
+              class="row-span-4 row-start-1 col-start-2 col-span-2 self-center"
+            >
+              <img class="h-auto w-full" src="/UEFA/armbaand.jpg" alt="" />
+            </div>
+            <div class="row-span-5 row-start-5 col-start-2">
+              <img class="h-full w-auto" src="/UEFA/Skaerm1.png" alt="" />
+            </div>
+            <div class="row-span-5 row-start-10 col-start-2">
+              <img class="h-full w-auto" src="/UEFA/Skaerm2.png" alt="" />
+            </div>
+            <div class="row-span-5 row-start-5 col-start-3">
+              <img class="h-full w-auto" src="/UEFA/Skaerm3.png" alt="" />
+            </div>
+            <div class="row-span-5 row-start-10 col-start-3">
+              <img class="h-full w-auto" src="/UEFA/Skaerm4.png" alt="" />
+            </div>
+            <div class="row-span-7 col-span-1 row-start-1 col-start-4">
+              <img class="h-full w-auto" src="/UEFA/Skaerme1-3.png" alt="" />
+            </div>
+            <div class="row-span-7 col-span-1 row-start-8 col-start-4">
+              <img class="h-full w-auto" src="/UEFA/Skaerme3-6.png" alt="" />
+            </div>
+            <div
+              class="row-span-7 row-start-1 col-start-5 self-center items-center"
+            >
+              <img class="h-full w-auto" src="/UEFA/Speed.png" alt="" />
+            </div>
+            <div
+              class="row-span-7 row-start-1 col-start-6 self-center items-center"
+            >
+              <img class="h-full w-auto" src="/UEFA/votes.png" alt="" />
+            </div>
+            <div
+              class="row-span-7 row-start-8 col-start-5 self-center flex items-center"
+            >
+              <img class="h-full w-auto" src="/UEFA/Keeper.png" alt="" />
+            </div>
+            <div
+              class="row-span-7 row-start-8 col-start-6 flex self-center justify-center items-center justify-self-center justify-items-center"
+            >
+              <img class="h-full w-auto" src="/UEFA/green.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</Layout>
+
+<style>
+  body {
+    background-color: var(--background);
+    background-image: url("/undercaseback.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* Custom scrollbar styling */
+  #sectionTwo::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  #sectionTwo::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  #sectionTwo::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+  }
+
+  /* For Firefox */
+  #sectionTwo {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+  }
+</style>

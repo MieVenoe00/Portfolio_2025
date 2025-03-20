@@ -73,6 +73,34 @@ font-family: "Blinker", sans-serif;
     margin: 0;
 }
 
+.undercaseH3 {
+    font-family: cartograph-cf, monospace;
+        text-transform: uppercase;
+        color: var(--color-primary);
+        font-size: 3rem;
+        line-height: 3rem;
+        font-weight: 300;
+        white-space: nowrap;
+}
+
+.undercaseH4 {
+    font-family: cartograph-cf, monospace;
+        text-transform: lowercase;
+        color: var(--color-brown);
+        font-size: 1.9rem;
+        line-height: 2.5rem;
+        font-weight: 100;
+        white-space: nowrap;
+}
+
+.casePtext {
+text-transform: none;
+    color: var(--color-blackBrown);
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 120%;
+}
+
 @media only screen and (min-width: 3100px) {
     p{
         font-size: 1.8rem;
